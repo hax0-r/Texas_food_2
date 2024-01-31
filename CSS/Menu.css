@@ -1,0 +1,655 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Raleway;
+    outline: none;
+}
+@font-face {
+    font-family: 'Anastasia';
+    src: url('/font/ANASTAS.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.menu nav {
+    background: #fcf1db;
+}
+.menu nav .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    height: 6.375rem;
+}
+.menu nav .main .left img {
+    max-height: 78px;
+    height: 100%;
+}
+.menu nav .main .right ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.menu nav .main .right ul .resImgNav {
+    display: none;
+}
+.menu nav .main .right ul li {
+    margin: 0 0.5rem;
+    margin-top: 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.menu nav .main .right ul li:nth-child(3)::before {
+    content: '';
+    width: 3.5rem;
+    height: 2px;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transition: 200ms all;
+    -o-transition: 200ms all;
+    transition: 200ms all;
+}
+.menu nav .main .right ul li a {
+    padding: 0.5rem;
+    color: #1a1a1a;
+    font-family: Anastasia;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 5;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    text-decoration: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.menu nav .main .right ul li a::before {
+    content: '';
+    width: 0rem;
+    height: 2px;
+    display: block;
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transition: 200ms all;
+    -o-transition: 200ms all;
+    transition: 200ms all;
+}
+.menu nav .main .right ul li a:hover::before {
+    width: 3.5rem;
+}
+.menu nav .main .right ul li a:active {
+    color: #1a1a1a 56;
+}
+.menu nav .main .right #nav_close {
+    display: none;
+}
+.menu nav .main #nav_bar {
+    display: none;
+    font-size: 1.5rem;
+    color: #822e1b;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .menu nav .main .right {
+        display: none;
+   }
+    .menu nav .main .right #nav_close {
+        font-size: 1.5rem;
+        position: absolute;
+        position: fixed;
+        color: #822e1b;
+        top: 2rem;
+        left: 12rem;
+        z-index: 999;
+        cursor: pointer;
+        display: block;
+   }
+    .menu nav .main .nav_mobile {
+        display: block;
+        overflow: hidden;
+   }
+    .menu nav .main .nav_mobile ul {
+        z-index: 99;
+        max-width: 15rem;
+        width: 100%;
+        height: 100vh;
+        background-color: #fcf1db;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-left: unset;
+   }
+    .menu nav .main .nav_mobile ul .resImgNav {
+        display: block;
+   }
+    .menu nav .main .nav_mobile ul img {
+        margin-bottom: 1.5rem;
+        height: 5rem;
+   }
+    .menu nav .main .nav_mobile ul li {
+        padding: 0.5rem 0rem;
+        width: 100%;
+        -webkit-transition: 300ms all;
+        -o-transition: 300ms all;
+        transition: 300ms all;
+        margin-top: unset;
+   }
+    .menu nav .main .nav_mobile ul li #navMenu {
+        background-color: #f5dba7;
+   }
+    .menu nav .main .nav_mobile ul li a {
+        width: 100%;
+        padding: 1rem 0.5rem;
+        color: #1a1a1a;
+        font-family: Anastasia;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 5;
+        line-height: normal;
+        letter-spacing: 0.44px;
+        text-decoration: none;
+        -webkit-transition: 300ms all;
+        -o-transition: 300ms all;
+        transition: 300ms all;
+   }
+    .menu nav .main .nav_mobile ul li a:hover {
+        background-color: #f5dba7;
+   }
+    .menu nav .main .nav_mobile ul li a:hover::before {
+        width: 0;
+   }
+    .menu nav .main #nav_bar {
+        display: block;
+   }
+}
+.menu .menu_pg1 {
+    background: url(../Assets/Menu/MenuBG.png) center;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+.menu .menu_pg1 .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 18.75rem;
+}
+.menu .menu_pg1 .main h1 {
+    color: #fcf1db;
+    font-family: Raleway;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+}
+.menu .menu_pg1 .main p {
+    max-width: 36.75rem;
+    padding: 1rem 1rem 0rem 1rem;
+    width: 100%;
+    color: #fcf1db;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.3125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: 0.02625rem;
+}
+.menu .menu_pg2 {
+    padding: 12vmin 0;
+}
+.menu .menu_pg2 h1 {
+    color: #822e1b;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+    text-align: center;
+}
+.menu .menu_pg2 #menu_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 4rem 5vmin;
+    gap: 2rem;
+}
+.menu .menu_pg2 #menu_card a {
+    text-decoration: none;
+}
+.menu .menu_pg2 #menu_card a .menu_card {
+    border-radius: 2.03025rem;
+    border: 1.805px solid #822e1b;
+    width: 21.5625rem;
+    height: 23.1875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    cursor: pointer;
+}
+.menu .menu_pg2 #menu_card a .menu_card img {
+    max-width: 17.35881rem;
+    width: 100%;
+    padding: 1rem;
+    height: 190px;
+}
+.menu .menu_pg2 #menu_card a .menu_card h2 {
+    color: #822e1b;
+    font-family: Raleway;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.035rem;
+}
+@media screen and (max-width: 400px) {
+    .menu .menu_pg2 #menu_card a .menu_card {
+        width: 18.5625rem;
+   }
+}
+@media screen and (max-width: 600px) {
+    .menu .menu_pg2 #menu_card {
+        padding: unset;
+        padding: 2rem 0;
+   }
+}
+.footer {
+    background: #fcf1db;
+    padding: 10vmin 0 3vmin 0;
+}
+.footer .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer .main .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+.footer .main .links img {
+    max-width: 12.05769rem;
+    width: 100%;
+}
+.footer .main .links p {
+    color: #1a1a1a;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+    text-transform: capitalize;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    margin-bottom: unset;
+}
+.footer .main .links p i {
+    color: #822e1b;
+    font-size: 1.5rem;
+}
+.footer .main .links a {
+    color: #1a1a1a;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.375rem;
+    letter-spacing: 0.02rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+}
+.footer .main .links a i {
+    color: #822e1b;
+    font-size: 1.5rem;
+}
+.footer .main .links .footer_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer .main .links .footer_links a i {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    background-color: #822e1b;
+    margin: 0.4rem;
+    color: #fff;
+}
+@media screen and (max-width: 400px) {
+    .footer .main .links {
+        padding: unset;
+        padding: 1rem 0;
+   }
+}
+.footer .main .home {
+    padding: 1rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.footer .main .home h1 {
+    color: #822e1b;
+    padding-bottom: 2rem;
+    font-family: Anastasia;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 5;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    text-align: unset;
+}
+.footer .main .home ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+.footer .main .home ul li {
+    padding: 0.3rem 0;
+}
+.footer .main .home ul li a {
+    color: #1a1a1a;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.02rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+@media screen and (max-width: 400px) {
+    .footer .main .home {
+        padding: unset;
+        padding: 1rem 0;
+   }
+}
+.footer .main .timing {
+    padding: 1rem 0rem;
+}
+.footer .main .timing h1 {
+    color: #822e1b;
+    font-family: Anastasia;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 5;
+    line-height: normal;
+    padding-left: 1.8rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+.footer .main .timing ul li {
+    color: #1a1a1a;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.84375rem;
+    letter-spacing: 0.02rem;
+    text-transform: capitalize;
+    padding: 0.6rem 0;
+}
+@media screen and (max-width: 400px) {
+    .footer .main .timing h1 {
+        padding-left: unset;
+   }
+    .footer .main .timing ul {
+        padding-left: unset;
+   }
+}
+.footer .main .partners {
+    padding: 1rem 2rem;
+}
+.footer .main .partners h1 {
+    color: #822e1b;
+    font-family: Anastasia;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 5;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+.footer .main .partners .partner_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+}
+.footer .main .partners .partner_img img {
+    width: 5.4375rem;
+    height: 5.4375rem;
+}
+@media screen and (max-width: 400px) {
+    .footer .main .partners {
+        padding: unset;
+        padding: 1rem 0;
+   }
+}
+.footer .footer_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.footer .footer_bottom hr {
+    color: #822e1b;
+    width: 92%;
+    border: 0.13rem solid #822e1b;
+}
+.footer .footer_bottom p {
+    padding-top: 2vmin;
+    color: #1a1a1a;
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0175rem;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    text-align: center;
+}
+.footer .footer_bottom p span {
+    color: #822e1b;
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0175rem;
+    text-transform: uppercase;
+}
+.footer .footer_bottom p span span {
+    color: #822e1b;
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0175rem;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+    .footer .main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
+        padding: 2rem;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 1rem;
+   }
+    .footer .footer_bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+   }
+    .footer .footer_bottom hr {
+        color: #822e1b;
+        width: 92%;
+        border: 0.13rem solid #822e1b;
+   }
+    .footer .footer_bottom p {
+        padding-top: 2vmin;
+        color: #1a1a1a;
+        font-family: Raleway;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.0175rem;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        text-align: center;
+   }
+    .footer .footer_bottom p span {
+        color: #822e1b;
+        font-family: Raleway;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.0175rem;
+        text-transform: uppercase;
+   }
+    .footer .footer_bottom p span span {
+        color: #822e1b;
+        font-family: Raleway;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.0175rem;
+        text-transform: uppercase;
+   }
+}
